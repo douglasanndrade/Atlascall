@@ -39,13 +39,13 @@ services:
     restart: unless-stopped
     environment:
       DEBUG_MODE: "false"
-      PUSHER_URL: "https://${DOMAIN}/"
+      PUSHER_URL: "https://atlascall-atlascall.68tvlf.easypanel.host/"
       FRONT_URL: "/"
       UPLOADER_URL: "/uploader"
       ICON_URL: "/icon"
       API_URL: "back:50051"
       INTERNAL_MAP_STORAGE_URL: "http://map-storage:3000"
-      PUBLIC_MAP_STORAGE_URL: "https://${DOMAIN}/map-storage"
+      PUBLIC_MAP_STORAGE_URL: "https://atlascall-atlascall.68tvlf.easypanel.host/map-storage"
       REDIS_HOST: "redis"
       SECRET_KEY: "${SECRET_KEY}"
       MAP_STORAGE_API_TOKEN: "${SECRET_KEY}"
@@ -68,13 +68,13 @@ services:
     image: thecodingmachine/workadventure-back:master
     restart: unless-stopped
     environment:
-      PLAY_URL: "https://${DOMAIN}"
+      PLAY_URL: "https://atlascall-atlascall.68tvlf.easypanel.host"
       SECRET_KEY: "${SECRET_KEY}"
       REDIS_HOST: "redis"
       API_URL: "back:50051"
       MAP_STORAGE_URL: "map-storage:50053"
       INTERNAL_MAP_STORAGE_URL: "http://map-storage:3000"
-      PUBLIC_MAP_STORAGE_URL: "https://${DOMAIN}/map-storage"
+      PUBLIC_MAP_STORAGE_URL: "https://atlascall-atlascall.68tvlf.easypanel.host/map-storage"
       ENABLE_MAP_EDITOR: "true"
       STORE_VARIABLES_FOR_LOCAL_MAPS: "true"
       MAX_PER_GROUP: "4"
@@ -93,14 +93,14 @@ services:
       SECRET_KEY: "${SECRET_KEY}"
       MAP_STORAGE_API_TOKEN: "${SECRET_KEY}"
       PATH_PREFIX: "/map-storage"
-      PUSHER_URL: "https://${DOMAIN}/"
+      PUSHER_URL: "https://atlascall-atlascall.68tvlf.easypanel.host/"
       ENABLE_BASIC_AUTHENTICATION: "true"
       ENABLE_BEARER_AUTHENTICATION: "true"
       ENABLE_DIGEST_AUTHENTICATION: "false"
-      AUTHENTICATION_USER: "${MAP_STORAGE_AUTHENTICATION_USER}"
+      AUTHENTICATION_USER: "admin"
       AUTHENTICATION_PASSWORD: "${MAP_STORAGE_AUTHENTICATION_PASSWORD}"
       AUTHENTICATION_TOKEN: "${SECRET_KEY}"
-      ENTITY_COLLECTION_URLS: "https://${DOMAIN}/collections/FurnitureCollection.json,https://${DOMAIN}/collections/OfficeCollection.json"
+      ENTITY_COLLECTION_URLS: "https://atlascall-atlascall.68tvlf.easypanel.host/collections/FurnitureCollection.json,https://atlascall-atlascall.68tvlf.easypanel.host/collections/OfficeCollection.json"
     volumes:
       - map-storage-data:/maps
 
@@ -108,7 +108,7 @@ services:
     image: thecodingmachine/workadventure-uploader:master
     restart: unless-stopped
     environment:
-      UPLOADER_URL: "https://${DOMAIN}/uploader"
+      UPLOADER_URL: "https://atlascall-atlascall.68tvlf.easypanel.host/uploader"
       REDIS_HOST: "redis"
       ENABLE_CHAT_UPLOAD: "false"
 
