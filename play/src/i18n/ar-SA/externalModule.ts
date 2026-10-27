@@ -60,7 +60,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "تسجيل الدخول باستخدام Outlook",
         popupScopeToSync: "الاتصال بحساب Outlook الخاص بي",
         popupScopeToSyncExplainText:
-            "نحتاج إلى الاتصال بحساب Outlook الخاص بك لمزامنة تقويمك و/أو مهامك. سيمكنك ذلك من عرض اجتماعاتك ومهامك في WorkAdventure والانضمام إليها مباشرة من الخريطة.",
+            "نحتاج إلى الاتصال بحساب Outlook الخاص بك لمزامنة تقويمك و/أو مهامك. سيمكنك ذلك من عرض اجتماعاتك ومهامك في Atlas Call والانضمام إليها مباشرة من الخريطة.",
         popupScopeToSyncCalendar: "مزامنة التقويم الخاص بي",
         popupScopeToSyncTask: "مزامنة مهامي",
         popupCancel: "إلغاء",
@@ -80,7 +80,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "تسجيل الدخول باستخدام Google",
         popupScopeToSync: "الاتصال بحساب Google الخاص بي",
         popupScopeToSyncExplainText:
-            "نحتاج إلى الاتصال بحساب Google الخاص بك لمزامنة تقويمك و/أو مهامك. سيمكنك ذلك من عرض اجتماعاتك ومهامك في WorkAdventure والانضمام إليها مباشرة من الخريطة.",
+            "نحتاج إلى الاتصال بحساب Google الخاص بك لمزامنة تقويمك و/أو مهامك. سيمكنك ذلك من عرض اجتماعاتك ومهامك في Atlas Call والانضمام إليها مباشرة من الخريطة.",
         popupScopeToSyncCalendar: "مزامنة التقويم الخاص بي",
         popupScopeToSyncTask: "مزامنة مهامي",
         popupCancel: "إلغاء",
@@ -106,7 +106,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "اجتماعاتك اليوم",
         joinMeeting: "انقر هنا للانضمام إلى الاجتماع",
-        joinMeetingInWorkAdventure: "انقر هنا للانضمام إلى الاجتماع في WorkAdventure",
+        joinMeetingInAtlas Call: "انقر هنا للانضمام إلى الاجتماع في Atlas Call",
         allDay: "طوال اليوم",
         nextMeeting: "الاجتماع التالي",
         inProgress: "جارٍ الآن",

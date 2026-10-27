@@ -681,7 +681,7 @@ const chat: DeepPartial<Translation["chat"]> = {
     },
     remoteUserNotConnected: "Người dùng chưa xác thực. Không thể gửi tin nhắn.",
     matrixSettings: {
-        title: "Matrix & WorkAdventure",
+        title: "Matrix & Atlas Call",
         subtitle: "Danh tính trò chuyện và hồ sơ Matrix của bạn",
         close: "Đóng",
         identitySection: "Danh tính",
@@ -690,7 +690,7 @@ const chat: DeepPartial<Translation["chat"]> = {
         copy: "Sao chép",
         copied: "Đã sao chép",
         profileSection: "Hồ sơ Matrix",
-        accountDataSection: "WorkAdventure (trong trò chơi)",
+        accountDataSection: "Atlas Call (trong trò chơi)",
         displayName: "Tên hiển thị",
         avatar: "Ảnh đại diện (MXC)",
         localName: "Tên trong trò chơi",
@@ -714,7 +714,7 @@ const chat: DeepPartial<Translation["chat"]> = {
         publishWokaToMatrixProfileButton: "Áp dụng tên & hình WOKA cho hồ sơ Matrix",
         publishWokaToMatrixProfilePublishing: "Đang cập nhật hồ sơ…",
         publishWokaToMatrixProfileConfirmWarning:
-            "Thao tác này thay thế tên hiển thị và ảnh đại diện hồ sơ Matrix của bạn trên máy chủ. Mọi tên hoặc ảnh đặt ở nơi khác (ví dụ trong Element) sẽ bị ghi đè. Chỉ tiếp tục nếu bạn muốn tên WorkAdventure và WOKA trở thành hồ sơ Matrix công khai của mình.",
+            "Thao tác này thay thế tên hiển thị và ảnh đại diện hồ sơ Matrix của bạn trên máy chủ. Mọi tên hoặc ảnh đặt ở nơi khác (ví dụ trong Element) sẽ bị ghi đè. Chỉ tiếp tục nếu bạn muốn tên Atlas Call và WOKA trở thành hồ sơ Matrix công khai của mình.",
         publishWokaToMatrixProfileCancelButton: "Hủy",
         publishWokaToMatrixProfileConfirmActionButton: "Ghi đè và áp dụng",
         actionDone: "Xong",

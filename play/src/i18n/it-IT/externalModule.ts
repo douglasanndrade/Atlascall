@@ -60,7 +60,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Accedi con Outlook",
         popupScopeToSync: "Connetti il mio account Outlook",
         popupScopeToSyncExplainText:
-            "Dobbiamo connetterci al tuo account Outlook per sincronizzare il tuo calendario e/o le tue attività. Questo ti permetterà di visualizzare le tue riunioni e attività in WorkAdventure e parteciparvi direttamente dalla mappa.",
+            "Dobbiamo connetterci al tuo account Outlook per sincronizzare il tuo calendario e/o le tue attività. Questo ti permetterà di visualizzare le tue riunioni e attività in Atlas Call e parteciparvi direttamente dalla mappa.",
         popupScopeToSyncCalendar: "Sincronizza il mio calendario",
         popupScopeToSyncTask: "Sincronizza le mie attività",
         popupCancel: "Annulla",
@@ -81,7 +81,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Accedi con Google",
         popupScopeToSync: "Connetti il mio account Google",
         popupScopeToSyncExplainText:
-            "Dobbiamo connetterci al tuo account Google per sincronizzare il tuo calendario e/o le tue attività. Questo ti permetterà di visualizzare le tue riunioni e attività in WorkAdventure e parteciparvi direttamente dalla mappa.",
+            "Dobbiamo connetterci al tuo account Google per sincronizzare il tuo calendario e/o le tue attività. Questo ti permetterà di visualizzare le tue riunioni e attività in Atlas Call e parteciparvi direttamente dalla mappa.",
         popupScopeToSyncCalendar: "Sincronizza il mio calendario",
         popupScopeToSyncTask: "Sincronizza le mie attività",
         popupCancel: "Annulla",
@@ -109,7 +109,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "Le tue riunioni oggi",
         joinMeeting: "Clicca qui per partecipare alla riunione",
-        joinMeetingInWorkAdventure: "Clicca qui per partecipare alla riunione in WorkAdventure",
+        joinMeetingInAtlas Call: "Clicca qui per partecipare alla riunione in Atlas Call",
         allDay: "Tutto il giorno",
         nextMeeting: "Prossima riunione",
         inProgress: "In corso",

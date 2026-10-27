@@ -57,9 +57,9 @@ const menu: DeepPartial<Translation["menu"]> = {
             echoCancellation: "Echo-onderdrukking",
             enableAdvancedNoiseReduction: "Geavanceerde ruisreductie inschakelen",
             noiseSuppressionMode: "Ruisonderdrukkingsmodus:",
-            workAdventureNoiseSuppression: "WorkAdventure-ruisonderdrukking",
+            workAdventureNoiseSuppression: "Atlas Call-ruisonderdrukking",
             workAdventureNoiseSuppressionDescription:
-                "Verwerk je microfoon met de ruisonderdrukking van WorkAdventure.",
+                "Verwerk je microfoon met de ruisonderdrukking van Atlas Call.",
             recommended: "Aanbevolen",
             browserNoiseSuppression: "Browserruisonderdrukking",
             browserNoiseSuppressionDescription: "Gebruik de ingebouwde ruisonderdrukking van je browser.",
@@ -75,7 +75,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         privacySettings: {
             title: "Afwezigheidsmodus",
             explanation:
-                'Wanneer je naar een ander venster of tabblad gaat, schakelt WorkAdventure over naar de "afwezigheidsmodus", behalve tijdens een gesprek of een uitzending.',
+                'Wanneer je naar een ander venster of tabblad gaat, schakelt Atlas Call over naar de "afwezigheidsmodus", behalve tijdens een gesprek of een uitzending.',
             cameraToggle: 'Houd camera actief in "afwezigheidsmodus"',
             microphoneToggle: 'Houd microfoon actief in "afwezigheidsmodus"',
         },
@@ -124,7 +124,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         gettingStarted: {
             title: "Aan de slag",
             description:
-                "WorkAdventure stelt je in staat om een online ruimte te creëren om spontaan met anderen te communiceren. En het begint allemaal met het creëren van je eigen ruimte. Kies uit een grote selectie van prefab-kaarten door ons team.",
+                "Atlas Call stelt je in staat om een online ruimte te creëren om spontaan met anderen te communiceren. En het begint allemaal met het creëren van je eigen ruimte. Kies uit een grote selectie van prefab-kaarten door ons team.",
         },
         createMap: {
             title: "Maak je kaart",

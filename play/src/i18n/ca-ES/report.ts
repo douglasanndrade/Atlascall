@@ -76,7 +76,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "BANDEJAT",
-        subtitle: "Has estat bandejat de WorkAdventure",
+        subtitle: "Has estat bandejat de Atlas Call",
         details: "Si vols més informació, pots contactar-nos a: hello@workadventu.re",
     },
     reasonGiven: "Motiu: {reason}",

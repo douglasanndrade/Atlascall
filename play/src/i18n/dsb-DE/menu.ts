@@ -57,8 +57,8 @@ const menu: DeepPartial<Translation["menu"]> = {
             echoCancellation: "Wótzašćitowanje echa",
             enableAdvancedNoiseReduction: "Rozšyrjone wótpóranje šuma zmóžniś",
             noiseSuppressionMode: "Modus wótpóranja šuma:",
-            workAdventureNoiseSuppression: "Wótpóranje šuma WorkAdventure",
-            workAdventureNoiseSuppressionDescription: "Pśeźěłajśo swój mikrofon z wótpóranim šuma WorkAdventure.",
+            workAdventureNoiseSuppression: "Wótpóranje šuma Atlas Call",
+            workAdventureNoiseSuppressionDescription: "Pśeźěłajśo swój mikrofon z wótpóranim šuma Atlas Call.",
             recommended: "Dopórucone",
             browserNoiseSuppression: "Wótpóranje šuma wobglědowaka",
             browserNoiseSuppressionDescription: "Wužywajśo zatwarjone wótpóranje šuma swójogo wobglědowaka.",
@@ -124,7 +124,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         gettingStarted: {
             title: "Prědne kšocenje",
             description:
-                "Z pomocu WorkAdventure móžoš stwóriś online-swět, źož móžoš se z drugimi spontanje zmakaś a rozgranjaś. Napóraj nejpjerwjej swóju kórtu. Tebje stoj k dispoziciji wjelika licba južo pśigótowanych kórtow wót našogo teama.",
+                "Z pomocu Atlas Call móžoš stwóriś online-swět, źož móžoš se z drugimi spontanje zmakaś a rozgranjaś. Napóraj nejpjerwjej swóju kórtu. Tebje stoj k dispoziciji wjelika licba južo pśigótowanych kórtow wót našogo teama.",
         },
         createMap: {
             title: "Swóju kórtu stwóriś",

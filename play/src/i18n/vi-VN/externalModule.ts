@@ -34,7 +34,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     discord: {
         integration: "TÍCH HỢP",
         explainText:
-            "Khi kết nối tài khoản Discord tại đây, bạn sẽ nhận được tin nhắn của mình ngay trong khung trò chuyện WorkAdventure. Sau khi đồng bộ một máy chủ, chúng tôi sẽ tạo các phòng tương ứng, bạn chỉ cần tham gia chúng trong khung trò chuyện WorkAdventure.",
+            "Khi kết nối tài khoản Discord tại đây, bạn sẽ nhận được tin nhắn của mình ngay trong khung trò chuyện Atlas Call. Sau khi đồng bộ một máy chủ, chúng tôi sẽ tạo các phòng tương ứng, bạn chỉ cần tham gia chúng trong khung trò chuyện Atlas Call.",
         login: "Kết nối Discord",
         fetchingServer: "Đang lấy các máy chủ Discord của bạn... 👀",
         qrCodeTitle: "Quét mã QR bằng ứng dụng Discord để đăng nhập.",
@@ -54,13 +54,13 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         tokenPlaceholder: "Token Discord của bạn",
         loginWithQrCode: "Đăng nhập bằng mã QR",
         guilds: "Máy chủ Discord",
-        guildExplain: "Chọn các kênh bạn muốn thêm vào giao diện trò chuyện WorkAdventure.\n",
+        guildExplain: "Chọn các kênh bạn muốn thêm vào giao diện trò chuyện Atlas Call.\n",
     },
     outlook: {
         signIn: "Đăng nhập với Outlook",
         popupScopeToSync: "Kết nối tài khoản Outlook của tôi",
         popupScopeToSyncExplainText:
-            "Chúng tôi cần kết nối tài khoản Outlook của bạn để đồng bộ lịch và/hoặc công việc. Nhờ đó bạn có thể xem các cuộc họp và công việc của mình trong WorkAdventure và tham gia trực tiếp từ bản đồ.",
+            "Chúng tôi cần kết nối tài khoản Outlook của bạn để đồng bộ lịch và/hoặc công việc. Nhờ đó bạn có thể xem các cuộc họp và công việc của mình trong Atlas Call và tham gia trực tiếp từ bản đồ.",
         popupScopeToSyncCalendar: "Đồng bộ lịch của tôi",
         popupScopeToSyncTask: "Đồng bộ công việc của tôi",
         popupCancel: "Hủy",
@@ -80,7 +80,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Đăng nhập với Google",
         popupScopeToSync: "Kết nối tài khoản Google của tôi",
         popupScopeToSyncExplainText:
-            "Chúng tôi cần kết nối tài khoản Google của bạn để đồng bộ lịch và/hoặc công việc. Nhờ đó bạn có thể xem các cuộc họp và công việc của mình trong WorkAdventure và tham gia trực tiếp từ bản đồ.",
+            "Chúng tôi cần kết nối tài khoản Google của bạn để đồng bộ lịch và/hoặc công việc. Nhờ đó bạn có thể xem các cuộc họp và công việc của mình trong Atlas Call và tham gia trực tiếp từ bản đồ.",
         popupScopeToSyncCalendar: "Đồng bộ lịch của tôi",
         popupScopeToSyncTask: "Đồng bộ công việc của tôi",
         popupCancel: "Hủy",
@@ -106,7 +106,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "Cuộc họp hôm nay của bạn",
         joinMeeting: "Bấm vào đây để tham gia cuộc họp",
-        joinMeetingInWorkAdventure: "Nhấn vào đây để tham gia cuộc họp trong WorkAdventure",
+        joinMeetingInAtlas Call: "Nhấn vào đây để tham gia cuộc họp trong Atlas Call",
         allDay: "Cả ngày",
         nextMeeting: "Cuộc họp tiếp theo",
         inProgress: "Đang diễn ra",

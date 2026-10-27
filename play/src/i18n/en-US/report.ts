@@ -74,7 +74,7 @@ const report: BaseTranslation = {
     },
     banned: {
         title: "BANNED",
-        subtitle: "You were banned from WorkAdventure",
+        subtitle: "You were banned from Atlas Call",
         details: "If you want more information, you may contact us at: hello@workadventu.re",
     },
     reasonGiven: "Reason: {reason}",

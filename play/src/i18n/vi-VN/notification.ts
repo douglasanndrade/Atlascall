@@ -20,7 +20,7 @@ const notification: DeepPartial<Translation["notification"]> = {
         title: "Quyền thông báo bị từ chối",
         permissionDenied: "Quyền bị từ chối",
         content:
-            "Đừng bỏ lỡ cuộc trò chuyện nào. Hãy bật thông báo để biết khi có người muốn nói chuyện với bạn, kể cả khi bạn không ở trên thẻ WorkAdventure.",
+            "Đừng bỏ lỡ cuộc trò chuyện nào. Hãy bật thông báo để biết khi có người muốn nói chuyện với bạn, kể cả khi bạn không ở trên thẻ Atlas Call.",
         firefoxContent:
             'Vui lòng đánh dấu ô "Ghi nhớ quyết định này" nếu bạn không muốn Firefox tiếp tục hỏi quyền truy cập.',
         refresh: "Tải lại",

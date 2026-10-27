@@ -74,7 +74,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "WUZAMKNJENY",
-        subtitle: "Sy z WorkAdventure wuzamknjeny",
+        subtitle: "Sy z Atlas Call wuzamknjeny",
         details: "za dalše informacije móžeš so na nas wobroćić: hello@workadventu.re",
     },
     reasonGiven: "přičina: {reason}",

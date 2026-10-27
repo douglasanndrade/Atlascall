@@ -34,7 +34,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     discord: {
         integration: "整合",
         explainText:
-            "在此處連線您的 Discord 帳戶後，您將能夠在 WorkAdventure 聊天中直接接收訊息。同步伺服器後，我們會建立其中包含的房間，您只需在 WorkAdventure 聊天中加入它們即可。",
+            "在此處連線您的 Discord 帳戶後，您將能夠在 Atlas Call 聊天中直接接收訊息。同步伺服器後，我們會建立其中包含的房間，您只需在 Atlas Call 聊天中加入它們即可。",
         login: "連線到 Discord",
         fetchingServer: "正在取得您的 Discord 伺服器... 👀",
         qrCodeTitle: "使用您的 Discord 應用程式掃描 QR Code 以登入。",
@@ -53,13 +53,13 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         tokenPlaceholder: "您的 Discord 權杖",
         loginWithQrCode: "使用 QR Code 登入",
         guilds: "Discord 伺服器",
-        guildExplain: "選擇要加入 WorkAdventure 聊天介面的頻道。\n",
+        guildExplain: "選擇要加入 Atlas Call 聊天介面的頻道。\n",
     },
     outlook: {
         signIn: "使用 Outlook 登入",
         popupScopeToSync: "連線我的 Outlook 帳戶",
         popupScopeToSyncExplainText:
-            "我們需要連線到您的 Outlook 帳戶以同步您的行事曆和／或工作。這將讓您在 WorkAdventure 中查看您的會議和工作，並直接從地圖加入它們。",
+            "我們需要連線到您的 Outlook 帳戶以同步您的行事曆和／或工作。這將讓您在 Atlas Call 中查看您的會議和工作，並直接從地圖加入它們。",
         popupScopeToSyncCalendar: "同步我的行事曆",
         popupScopeToSyncTask: "同步我的工作",
         popupCancel: "取消",
@@ -78,7 +78,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "使用 Google 登入",
         popupScopeToSync: "連線我的 Google 帳戶",
         popupScopeToSyncExplainText:
-            "我們需要連線到您的 Google 帳戶以同步您的行事曆和／或工作。這將讓您在 WorkAdventure 中查看您的會議和工作，並直接從地圖加入它們。",
+            "我們需要連線到您的 Google 帳戶以同步您的行事曆和／或工作。這將讓您在 Atlas Call 中查看您的會議和工作，並直接從地圖加入它們。",
         popupScopeToSyncCalendar: "同步我的行事曆",
         popupScopeToSyncTask: "同步我的工作",
         popupCancel: "取消",
@@ -104,7 +104,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "您今天的會議",
         joinMeeting: "點選此處加入會議",
-        joinMeetingInWorkAdventure: "點擊此處在 WorkAdventure 中加入會議",
+        joinMeetingInAtlas Call: "點擊此處在 Atlas Call 中加入會議",
         allDay: "全天",
         nextMeeting: "下一場會議",
         inProgress: "進行中",

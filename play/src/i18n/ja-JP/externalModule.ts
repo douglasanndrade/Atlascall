@@ -61,7 +61,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Outlook でサインイン",
         popupScopeToSync: "Outlook アカウントに接続",
         popupScopeToSyncExplainText:
-            "カレンダーやタスクを同期するために、Outlook アカウントに接続する必要があります。これにより、WorkAdventure で会議やタスクを表示し、マップから直接参加できるようになります。",
+            "カレンダーやタスクを同期するために、Outlook アカウントに接続する必要があります。これにより、Atlas Call で会議やタスクを表示し、マップから直接参加できるようになります。",
         popupScopeToSyncCalendar: "カレンダーを同期",
         popupScopeToSyncTask: "タスクを同期",
         popupCancel: "キャンセル",
@@ -83,7 +83,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Google でサインイン",
         popupScopeToSync: "Google アカウントに接続",
         popupScopeToSyncExplainText:
-            "カレンダーやタスクを同期するために、Google アカウントに接続する必要があります。これにより、WorkAdventure で会議やタスクを表示し、マップから直接参加できるようになります。",
+            "カレンダーやタスクを同期するために、Google アカウントに接続する必要があります。これにより、Atlas Call で会議やタスクを表示し、マップから直接参加できるようになります。",
         popupScopeToSyncCalendar: "カレンダーを同期",
         popupScopeToSyncTask: "タスクを同期",
         popupCancel: "キャンセル",
@@ -111,7 +111,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "今日の会議",
         joinMeeting: "ここをクリックして会議に参加",
-        joinMeetingInWorkAdventure: "ここをクリックしてWorkAdventureで会議に参加",
+        joinMeetingInAtlas Call: "ここをクリックしてAtlas Callで会議に参加",
         allDay: "終日",
         nextMeeting: "次の会議",
         inProgress: "進行中",

@@ -76,7 +76,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "BANEADO",
-        subtitle: "Has sido baneado de WorkAdventure",
+        subtitle: "Has sido baneado de Atlas Call",
         details: "Si quieres más información, puedes contactarnos en: hello@workadventu.re",
     },
     reasonGiven: "Motivo: {reason}",

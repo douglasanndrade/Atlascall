@@ -61,7 +61,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Mit Outlook anmelden",
         popupScopeToSync: "Mein Outlook-Konto verbinden",
         popupScopeToSyncExplainText:
-            "Wir müssen uns mit Ihrem Outlook-Konto verbinden, um Ihren Kalender und/oder Ihre Aufgaben zu synchronisieren. Dies ermöglicht es Ihnen, Ihre Besprechungen und Aufgaben in WorkAdventure anzuzeigen und direkt von der Karte aus daran teilzunehmen.",
+            "Wir müssen uns mit Ihrem Outlook-Konto verbinden, um Ihren Kalender und/oder Ihre Aufgaben zu synchronisieren. Dies ermöglicht es Ihnen, Ihre Besprechungen und Aufgaben in Atlas Call anzuzeigen und direkt von der Karte aus daran teilzunehmen.",
         popupScopeToSyncCalendar: "Meinen Kalender synchronisieren",
         popupScopeToSyncTask: "Meine Aufgaben synchronisieren",
         popupCancel: "Abbrechen",
@@ -83,7 +83,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Mit Google anmelden",
         popupScopeToSync: "Mein Google-Konto verbinden",
         popupScopeToSyncExplainText:
-            "Wir müssen uns mit Ihrem Google-Konto verbinden, um Ihren Kalender und/oder Ihre Aufgaben zu synchronisieren. Dies ermöglicht es Ihnen, Ihre Besprechungen und Aufgaben in WorkAdventure anzuzeigen und direkt von der Karte aus daran teilzunehmen.",
+            "Wir müssen uns mit Ihrem Google-Konto verbinden, um Ihren Kalender und/oder Ihre Aufgaben zu synchronisieren. Dies ermöglicht es Ihnen, Ihre Besprechungen und Aufgaben in Atlas Call anzuzeigen und direkt von der Karte aus daran teilzunehmen.",
         popupScopeToSyncCalendar: "Meinen Kalender synchronisieren",
         popupScopeToSyncTask: "Meine Aufgaben synchronisieren",
         popupCancel: "Abbrechen",
@@ -112,7 +112,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "Ihre Besprechung heute",
         joinMeeting: "Klicken Sie hier, um an der Besprechung teilzunehmen",
-        joinMeetingInWorkAdventure: "Hier klicken, um dem Meeting in WorkAdventure beizutreten",
+        joinMeetingInAtlas Call: "Hier klicken, um dem Meeting in Atlas Call beizutreten",
         allDay: "Ganztägig",
         nextMeeting: "Nächstes Meeting",
         inProgress: "Läuft",

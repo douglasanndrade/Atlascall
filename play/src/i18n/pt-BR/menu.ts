@@ -56,9 +56,9 @@ const menu: BaseTranslation = {
             echoCancellation: "Cancelamento de eco",
             enableAdvancedNoiseReduction: "Ativar redução de ruído avançada",
             noiseSuppressionMode: "Modo de supressão de ruído:",
-            workAdventureNoiseSuppression: "Supressão de ruído do WorkAdventure",
+            workAdventureNoiseSuppression: "Supressão de ruído do Atlas Call",
             workAdventureNoiseSuppressionDescription:
-                "Processa seu microfone com a supressão de ruído do WorkAdventure.",
+                "Processa seu microfone com a supressão de ruído do Atlas Call.",
             recommended: "Recomendado",
             browserNoiseSuppression: "Supressão de ruído do navegador",
             browserNoiseSuppressionDescription: "Usa a supressão de ruído integrada ao navegador.",
@@ -75,7 +75,7 @@ const menu: BaseTranslation = {
         privacySettings: {
             title: "Modo ausente",
             explanation:
-                'Ao mudar para outra janela ou aba, o WorkAdventure muda para o "modo ausente", exceto durante uma conversa ou uma transmissão.',
+                'Ao mudar para outra janela ou aba, o Atlas Call muda para o "modo ausente", exceto durante uma conversa ou uma transmissão.',
             cameraToggle: 'Mantenha a câmera ativa no "modo ausente"',
             microphoneToggle: 'Mantenha o microfone ativo no "modo ausente"',
         },
@@ -124,7 +124,7 @@ const menu: BaseTranslation = {
         gettingStarted: {
             title: "Começando",
             description:
-                "WorkAdventure permite que você crie um espaço online para se comunicar espontaneamente com outras pessoas. E tudo começa com a criação do seu próprio espaço. Escolha entre uma grande seleção de mapas pré-fabricados por nossa equipe.",
+                "Atlas Call permite que você crie um espaço online para se comunicar espontaneamente com outras pessoas. E tudo começa com a criação do seu próprio espaço. Escolha entre uma grande seleção de mapas pré-fabricados por nossa equipe.",
         },
         createMap: {
             title: "Crie seu mapa",

@@ -13,11 +13,11 @@ import { ADMIN_API_URL } from "../enums/EnvironmentVariable";
 import { adminService } from "./AdminService";
 
 export const MetaTagsDefaultValue: RequiredMetaTagsData = {
-    title: "WorkAdventure",
+    title: "Atlas Call",
     description:
-        "Organize your online event in WorkAdventure to recreate spontaneous social interactions. Connect, collaborate and have fun with your teammates and attendees.",
-    author: "WorkAdventure team",
-    provider: "WorkAdventure",
+        "Organize your online event in Atlas Call to recreate spontaneous social interactions. Connect, collaborate and have fun with your teammates and attendees.",
+    author: "Atlas Call team",
+    provider: "Atlas Call",
     favIcons: [
         {
             rel: "icon",
@@ -32,7 +32,7 @@ export const MetaTagsDefaultValue: RequiredMetaTagsData = {
             type: "image/png",
         },
     ],
-    appName: "WorkAdventure",
+    appName: "Atlas Call",
     shortAppName: "WA",
     themeColor: "#1B2A41",
     cardImage: "https://workadventu.re/images/general/logo-og.png",

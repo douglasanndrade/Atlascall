@@ -75,7 +75,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "VERBANNT",
-        subtitle: "Du wurdest von WorkAdventure verbannt",
+        subtitle: "Du wurdest von Atlas Call verbannt",
         details: "Für weitere Informationen kannst du uns kontaktieren: hello@workadventu.re",
     },
     reasonGiven: "Grund: {reason}",

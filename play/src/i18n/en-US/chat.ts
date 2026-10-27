@@ -681,7 +681,7 @@ const chat: BaseTranslation = {
     },
     remoteUserNotConnected: "User not authenticated. Cannot send message.",
     matrixSettings: {
-        title: "Matrix & WorkAdventure",
+        title: "Matrix & Atlas Call",
         subtitle: "Your chat identity and Matrix profile",
         close: "Close",
         identitySection: "Identity",
@@ -690,7 +690,7 @@ const chat: BaseTranslation = {
         copy: "Copy",
         copied: "Copied",
         profileSection: "Matrix profile",
-        accountDataSection: "WorkAdventure (in-game)",
+        accountDataSection: "Atlas Call (in-game)",
         displayName: "Display name",
         avatar: "Avatar (MXC)",
         localName: "Local game name",
@@ -714,7 +714,7 @@ const chat: BaseTranslation = {
         publishWokaToMatrixProfileButton: "Apply WOKA name & picture to Matrix profile",
         publishWokaToMatrixProfilePublishing: "Updating profile…",
         publishWokaToMatrixProfileConfirmWarning:
-            "This replaces your Matrix profile display name and avatar on the server. Any name or photo set elsewhere (e.g. in Element) will be overwritten. Continue only if you want your WorkAdventure name and WOKA to become your public Matrix profile.",
+            "This replaces your Matrix profile display name and avatar on the server. Any name or photo set elsewhere (e.g. in Element) will be overwritten. Continue only if you want your Atlas Call name and WOKA to become your public Matrix profile.",
         publishWokaToMatrixProfileCancelButton: "Cancel",
         publishWokaToMatrixProfileConfirmActionButton: "Overwrite and apply",
         actionDone: "Done",

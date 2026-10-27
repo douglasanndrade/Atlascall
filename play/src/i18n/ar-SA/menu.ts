@@ -57,8 +57,8 @@ const menu: DeepPartial<Translation["menu"]> = {
             echoCancellation: "إلغاء الصدى",
             enableAdvancedNoiseReduction: "تفعيل تقليل الضوضاء المتقدم",
             noiseSuppressionMode: "وضع تقليل الضوضاء:",
-            workAdventureNoiseSuppression: "تقليل الضوضاء من WorkAdventure",
-            workAdventureNoiseSuppressionDescription: "معالجة صوت الميكروفون باستخدام تقليل الضوضاء في WorkAdventure.",
+            workAdventureNoiseSuppression: "تقليل الضوضاء من Atlas Call",
+            workAdventureNoiseSuppressionDescription: "معالجة صوت الميكروفون باستخدام تقليل الضوضاء في Atlas Call.",
             recommended: "موصى به",
             browserNoiseSuppression: "تقليل الضوضاء في المتصفح",
             browserNoiseSuppressionDescription: "استخدام تقليل الضوضاء المدمج في المتصفح.",
@@ -74,7 +74,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         privacySettings: {
             title: "وضع الغياب", // Absence mode
             explanation:
-                'عند الانتقال إلى نافذة أو تبويب آخر، ينتقل WorkAdventure إلى "وضع الغياب"، إلا أثناء محادثة أو بث.', // When you switch to another window or tab, WorkAdventure switches to "absence mode", except during a conversation or a broadcast.
+                'عند الانتقال إلى نافذة أو تبويب آخر، ينتقل Atlas Call إلى "وضع الغياب"، إلا أثناء محادثة أو بث.', // When you switch to another window or tab, Atlas Call switches to "absence mode", except during a conversation or a broadcast.
             cameraToggle: 'اترك الكاميرا مفعلة في "وضع الغياب".', // Keep camera active in "absence mode".
             microphoneToggle: 'اترك الميكروفون مفعلاً في "وضع الغياب".', // Keep microphone active in "absence mode".
         },
@@ -123,7 +123,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         gettingStarted: {
             title: "البدء", // Getting started
             description:
-                "مع WorkAdventure يمكنك إنشاء عالم عبر الإنترنت حيث يمكنك الاجتماع والتحدث مع الآخرين بشكل عفوي. ابدأ بإنشاء خريطتك الخاصة. يتوفر لك مجموعة كبيرة من الخرائط الجاهزة من فريقنا.", // With WorkAdventure you can create an online world where you can meet and talk to others spontaneously. Start by creating your own map. A large selection of ready-made maps from our team is available to you.
+                "مع Atlas Call يمكنك إنشاء عالم عبر الإنترنت حيث يمكنك الاجتماع والتحدث مع الآخرين بشكل عفوي. ابدأ بإنشاء خريطتك الخاصة. يتوفر لك مجموعة كبيرة من الخرائط الجاهزة من فريقنا.", // With Atlas Call you can create an online world where you can meet and talk to others spontaneously. Start by creating your own map. A large selection of ready-made maps from our team is available to you.
         },
         createMap: {
             title: "إنشاء خريطة خاصة", // Create your own map

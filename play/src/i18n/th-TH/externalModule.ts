@@ -33,7 +33,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     discord: {
         integration: "การเชื่อมต่อ",
         explainText:
-            "เมื่อเชื่อมต่อบัญชี Discord ของคุณที่นี่ คุณจะสามารถรับข้อความของคุณได้โดยตรงในแชทของ WorkAdventure หลังจากซิงก์เซิร์ฟเวอร์แล้ว เราจะสร้างห้องต่าง ๆ ที่อยู่ในเซิร์ฟเวอร์นั้น คุณเพียงแค่เข้าร่วมห้องเหล่านั้นในแชทของ WorkAdventure",
+            "เมื่อเชื่อมต่อบัญชี Discord ของคุณที่นี่ คุณจะสามารถรับข้อความของคุณได้โดยตรงในแชทของ Atlas Call หลังจากซิงก์เซิร์ฟเวอร์แล้ว เราจะสร้างห้องต่าง ๆ ที่อยู่ในเซิร์ฟเวอร์นั้น คุณเพียงแค่เข้าร่วมห้องเหล่านั้นในแชทของ Atlas Call",
         login: "เชื่อมต่อกับ Discord",
         fetchingServer: "กำลังดึงข้อมูลเซิร์ฟเวอร์ Discord ของคุณ... 👀",
         qrCodeTitle: "สแกนคิวอาร์โค้ดด้วยแอป Discord ของคุณเพื่อเข้าสู่ระบบ",
@@ -53,13 +53,13 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         tokenPlaceholder: "โทเคน Discord ของคุณ",
         loginWithQrCode: "เข้าสู่ระบบด้วยคิวอาร์โค้ด",
         guilds: "เซิร์ฟเวอร์ Discord",
-        guildExplain: "เลือกช่องที่คุณต้องการเพิ่มลงในหน้าแชทของ WorkAdventure\n",
+        guildExplain: "เลือกช่องที่คุณต้องการเพิ่มลงในหน้าแชทของ Atlas Call\n",
     },
     outlook: {
         signIn: "ลงชื่อเข้าใช้ด้วย Outlook",
         popupScopeToSync: "เชื่อมต่อบัญชี Outlook ของฉัน",
         popupScopeToSyncExplainText:
-            "เราจำเป็นต้องเชื่อมต่อกับบัญชี Outlook ของคุณเพื่อซิงก์ปฏิทินและ/หรืองานของคุณ ซึ่งจะช่วยให้คุณเห็นการประชุมและงานต่าง ๆ ใน WorkAdventure และเข้าร่วมได้โดยตรงจากแผนที่",
+            "เราจำเป็นต้องเชื่อมต่อกับบัญชี Outlook ของคุณเพื่อซิงก์ปฏิทินและ/หรืองานของคุณ ซึ่งจะช่วยให้คุณเห็นการประชุมและงานต่าง ๆ ใน Atlas Call และเข้าร่วมได้โดยตรงจากแผนที่",
         popupScopeToSyncCalendar: "ซิงก์ปฏิทินของฉัน",
         popupScopeToSyncTask: "ซิงก์งานของฉัน",
         popupCancel: "ยกเลิก",
@@ -79,7 +79,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "ลงชื่อเข้าใช้ด้วย Google",
         popupScopeToSync: "เชื่อมต่อบัญชี Google ของฉัน",
         popupScopeToSyncExplainText:
-            "เราจำเป็นต้องเชื่อมต่อกับบัญชี Google ของคุณเพื่อซิงก์ปฏิทินและ/หรืองานของคุณ ซึ่งจะช่วยให้คุณเห็นการประชุมและงานต่าง ๆ ใน WorkAdventure และเข้าร่วมได้โดยตรงจากแผนที่",
+            "เราจำเป็นต้องเชื่อมต่อกับบัญชี Google ของคุณเพื่อซิงก์ปฏิทินและ/หรืองานของคุณ ซึ่งจะช่วยให้คุณเห็นการประชุมและงานต่าง ๆ ใน Atlas Call และเข้าร่วมได้โดยตรงจากแผนที่",
         popupScopeToSyncCalendar: "ซิงก์ปฏิทินของฉัน",
         popupScopeToSyncTask: "ซิงก์งานของฉัน",
         popupCancel: "ยกเลิก",
@@ -105,7 +105,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "การประชุมของคุณวันนี้",
         joinMeeting: "คลิกที่นี่เพื่อเข้าร่วมการประชุม",
-        joinMeetingInWorkAdventure: "คลิกที่นี่เพื่อเข้าร่วมการประชุมใน WorkAdventure",
+        joinMeetingInAtlas Call: "คลิกที่นี่เพื่อเข้าร่วมการประชุมใน Atlas Call",
         allDay: "ทั้งวัน",
         nextMeeting: "การประชุมถัดไป",
         inProgress: "กำลังดำเนินอยู่",

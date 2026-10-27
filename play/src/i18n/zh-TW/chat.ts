@@ -677,7 +677,7 @@ const chat: DeepPartial<Translation["chat"]> = {
     },
     remoteUserNotConnected: "使用者未驗證。無法傳送訊息。",
     matrixSettings: {
-        title: "Matrix & WorkAdventure",
+        title: "Matrix & Atlas Call",
         subtitle: "您的聊天身分與 Matrix 個人資料",
         close: "關閉",
         identitySection: "身分",
@@ -686,7 +686,7 @@ const chat: DeepPartial<Translation["chat"]> = {
         copy: "複製",
         copied: "已複製",
         profileSection: "Matrix 個人資料",
-        accountDataSection: "WorkAdventure（遊戲內）",
+        accountDataSection: "Atlas Call（遊戲內）",
         displayName: "顯示名稱",
         avatar: "頭像 (MXC)",
         localName: "本機遊戲名稱",
@@ -708,7 +708,7 @@ const chat: DeepPartial<Translation["chat"]> = {
         publishWokaToMatrixProfileButton: "將 WOKA 名稱與圖片套用至 Matrix 個人資料",
         publishWokaToMatrixProfilePublishing: "正在更新個人資料…",
         publishWokaToMatrixProfileConfirmWarning:
-            "這將取代伺服器上您的 Matrix 個人資料顯示名稱和頭像。在其他地方（例如 Element）設定的任何名稱或相片都會被覆寫。只有在您希望 WorkAdventure 名稱和 WOKA 成為您公開的 Matrix 個人資料時才繼續。",
+            "這將取代伺服器上您的 Matrix 個人資料顯示名稱和頭像。在其他地方（例如 Element）設定的任何名稱或相片都會被覆寫。只有在您希望 Atlas Call 名稱和 WOKA 成為您公開的 Matrix 個人資料時才繼續。",
         publishWokaToMatrixProfileCancelButton: "取消",
         publishWokaToMatrixProfileConfirmActionButton: "覆寫並套用",
         actionDone: "完成",

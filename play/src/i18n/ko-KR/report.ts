@@ -74,7 +74,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "차단됨",
-        subtitle: "WorkAdventure에서 차단되었습니다",
+        subtitle: "Atlas Call에서 차단되었습니다",
         details: "자세한 내용은 hello@workadventu.re 로 문의하세요.",
     },
     reasonGiven: "사유: {reason}",

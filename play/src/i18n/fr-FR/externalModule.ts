@@ -35,7 +35,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     discord: {
         integration: "INTÉGRATION",
         explainText:
-            "En connectant votre compte Discord ici, vous pourrez recevoir vos messages directement dans le chat WorkAdventure. Après avoir synchronisé un serveur, nous créerons les salles qu'il contient, vous n'aurez plus qu'à les rejoindre dans le chat WorkAdventure.",
+            "En connectant votre compte Discord ici, vous pourrez recevoir vos messages directement dans le chat Atlas Call. Après avoir synchronisé un serveur, nous créerons les salles qu'il contient, vous n'aurez plus qu'à les rejoindre dans le chat Atlas Call.",
         login: "Connexion à Discord",
         fetchingServer: "Récupération de vos serveurs... 👀",
         qrCodeTitle: "Connectez-vous à Discord",
@@ -56,13 +56,13 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         tokenPlaceholder: "Votre jeton Discord",
         loginWithQrCode: "Se connecter avec le code QR",
         guilds: "Serveurs Discord",
-        guildExplain: "Sélectionnez les canaux que vous souhaitez ajouter à l'interface de chat WorkAdventure.\n",
+        guildExplain: "Sélectionnez les canaux que vous souhaitez ajouter à l'interface de chat Atlas Call.\n",
     },
     outlook: {
         signIn: "Se connecter avec Outlook",
         popupScopeToSync: "Connecter mon compte Outlook",
         popupScopeToSyncExplainText:
-            "Nous avons besoin de nous connecter à votre compte Outlook pour synchroniser votre calendrier et / ou vos tâches. Cela vous permettra de voir vos réunions et vos tâches dans WorkAdventure et de les rejoindre directement depuis la carte.",
+            "Nous avons besoin de nous connecter à votre compte Outlook pour synchroniser votre calendrier et / ou vos tâches. Cela vous permettra de voir vos réunions et vos tâches dans Atlas Call et de les rejoindre directement depuis la carte.",
         popupScopeToSyncCalendar: "Synchroniser mon calendrier",
         popupScopeToSyncTask: "Synchroniser mes tâches",
         popupCancel: "Annuler",
@@ -84,7 +84,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Se connecter avec Google",
         popupScopeToSync: "Connecter mon compte Google",
         popupScopeToSyncExplainText:
-            "Nous avons besoin de nous connecter à votre compte Google pour synchroniser votre calendrier et / ou vos tâches. Cela vous permettra de voir vos réunions et vos tâches dans WorkAdventure et de les rejoindre directement depuis la carte.",
+            "Nous avons besoin de nous connecter à votre compte Google pour synchroniser votre calendrier et / ou vos tâches. Cela vous permettra de voir vos réunions et vos tâches dans Atlas Call et de les rejoindre directement depuis la carte.",
         popupScopeToSyncCalendar: "Synchroniser mon calendrier",
         popupScopeToSyncTask: "Synchroniser mes tâches",
         popupCancel: "Annuler",
@@ -114,7 +114,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "Vos prochaines réunions",
         joinMeeting: "Cliquez ici pour rejoindre la réunion",
-        joinMeetingInWorkAdventure: "Cliquez ici pour rejoindre la réunion dans WorkAdventure",
+        joinMeetingInAtlas Call: "Cliquez ici pour rejoindre la réunion dans Atlas Call",
         allDay: "Toute la journée",
         nextMeeting: "Prochaine réunion",
         inProgress: "En cours",

@@ -61,7 +61,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Iniciar sessió amb Outlook",
         popupScopeToSync: "Connectar el meu compte d'Outlook",
         popupScopeToSyncExplainText:
-            "Necessitem connectar-nos al vostre compte d'Outlook per sincronitzar el vostre calendari i/o tasques. Això us permetrà veure les vostres reunions i tasques a WorkAdventure i unir-vos-hi directament des del mapa.",
+            "Necessitem connectar-nos al vostre compte d'Outlook per sincronitzar el vostre calendari i/o tasques. Això us permetrà veure les vostres reunions i tasques a Atlas Call i unir-vos-hi directament des del mapa.",
         popupScopeToSyncCalendar: "Sincronitzar el meu calendari",
         popupScopeToSyncTask: "Sincronitzar les meves tasques",
         popupCancel: "Cancel·lar",
@@ -83,7 +83,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "Iniciar sessió amb Google",
         popupScopeToSync: "Connectar el meu compte de Google",
         popupScopeToSyncExplainText:
-            "Necessitem connectar-nos al vostre compte de Google per sincronitzar el vostre calendari i/o tasques. Això us permetrà veure les vostres reunions i tasques a WorkAdventure i unir-vos-hi directament des del mapa.",
+            "Necessitem connectar-nos al vostre compte de Google per sincronitzar el vostre calendari i/o tasques. Això us permetrà veure les vostres reunions i tasques a Atlas Call i unir-vos-hi directament des del mapa.",
         popupScopeToSyncCalendar: "Sincronitzar el meu calendari",
         popupScopeToSyncTask: "Sincronitzar les meves tasques",
         popupCancel: "Cancel·lar",
@@ -111,7 +111,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "Les vostres reunions avui",
         joinMeeting: "Feu clic aquí per unir-vos a la reunió",
-        joinMeetingInWorkAdventure: "Fes clic aquí per unir-te a la reunió a WorkAdventure",
+        joinMeetingInAtlas Call: "Fes clic aquí per unir-te a la reunió a Atlas Call",
         allDay: "Tot el dia",
         nextMeeting: "Propera reunió",
         inProgress: "En curs",

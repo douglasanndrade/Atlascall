@@ -58,9 +58,9 @@ const menu: DeepPartial<Translation["menu"]> = {
             echoCancellation: "Echounterdrückung",
             enableAdvancedNoiseReduction: "Erweiterte Geräuschreduzierung aktivieren",
             noiseSuppressionMode: "Modus der Geräuschunterdrückung:",
-            workAdventureNoiseSuppression: "WorkAdventure-Geräuschunterdrückung",
+            workAdventureNoiseSuppression: "Atlas Call-Geräuschunterdrückung",
             workAdventureNoiseSuppressionDescription:
-                "Verarbeite dein Mikrofon mit der Geräuschunterdrückung von WorkAdventure.",
+                "Verarbeite dein Mikrofon mit der Geräuschunterdrückung von Atlas Call.",
             recommended: "Empfohlen",
             browserNoiseSuppression: "Browser-Geräuschunterdrückung",
             browserNoiseSuppressionDescription: "Nutze die integrierte Geräuschunterdrückung deines Browsers.",
@@ -77,7 +77,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         privacySettings: {
             title: "Abwesenheitsmodus",
             explanation:
-                "Wenn Sie zu einem anderen Fenster oder Tab wechseln, schaltet WorkAdventure in den „Abwesenheitsmodus“, außer während eines Gesprächs oder einer Übertragung.",
+                "Wenn Sie zu einem anderen Fenster oder Tab wechseln, schaltet Atlas Call in den „Abwesenheitsmodus“, außer während eines Gesprächs oder einer Übertragung.",
             cameraToggle: "Kamera im „Abwesenheitsmodus“ aktiviert lassen.",
             microphoneToggle: "Mikrofon im „Abwesenheitsmodus“ aktiviert lassen.",
         },
@@ -125,7 +125,7 @@ const menu: DeepPartial<Translation["menu"]> = {
         gettingStarted: {
             title: "Erste Schritte",
             description:
-                "Mit WorkAdventure kannst du eine Onlinewelt erschaffen, in der du dich spontan mit anderen treffen und unterhalten kannst. Erstelle als erstes deine eigene Karte. Es steht dir eine große Auswahl an vorgefertigten Karten von unserem Team zur Verfügung.",
+                "Mit Atlas Call kannst du eine Onlinewelt erschaffen, in der du dich spontan mit anderen treffen und unterhalten kannst. Erstelle als erstes deine eigene Karte. Es steht dir eine große Auswahl an vorgefertigten Karten von unserem Team zur Verfügung.",
         },
         createMap: {
             title: "Eigene Karte erstellen",

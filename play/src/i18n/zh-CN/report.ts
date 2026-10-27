@@ -73,7 +73,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "已被封禁",
-        subtitle: "你已被 WorkAdventure 封禁",
+        subtitle: "你已被 Atlas Call 封禁",
         details: "如需更多信息，请联系我们：hello@workadventu.re",
     },
     reasonGiven: "原因：{reason}",

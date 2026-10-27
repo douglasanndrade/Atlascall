@@ -34,7 +34,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     discord: {
         integration: "集成",
         explainText:
-            "通过在此处连接您的 Discord 账户，您将能够在 WorkAdventure 聊天中直接接收消息。同步服务器后，我们将创建其中包含的房间，您只需在 WorkAdventure 聊天中加入它们即可。",
+            "通过在此处连接您的 Discord 账户，您将能够在 Atlas Call 聊天中直接接收消息。同步服务器后，我们将创建其中包含的房间，您只需在 Atlas Call 聊天中加入它们即可。",
         login: "连接到 Discord",
         fetchingServer: "正在获取您的 Discord 服务器... 👀",
         qrCodeTitle: "使用您的 Discord 应用扫描二维码以登录。",
@@ -53,13 +53,13 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         tokenPlaceholder: "您的 Discord 令牌",
         loginWithQrCode: "使用二维码登录",
         guilds: "Discord 服务器",
-        guildExplain: "选择要添加到 WorkAdventure 聊天界面的频道。\n",
+        guildExplain: "选择要添加到 Atlas Call 聊天界面的频道。\n",
     },
     outlook: {
         signIn: "使用 Outlook 登录",
         popupScopeToSync: "连接我的 Outlook 账户",
         popupScopeToSyncExplainText:
-            "我们需要连接到您的 Outlook 账户以同步您的日历和/或任务。这将允许您在 WorkAdventure 中查看您的会议和任务，并直接从地图加入它们。",
+            "我们需要连接到您的 Outlook 账户以同步您的日历和/或任务。这将允许您在 Atlas Call 中查看您的会议和任务，并直接从地图加入它们。",
         popupScopeToSyncCalendar: "同步我的日历",
         popupScopeToSyncTask: "同步我的任务",
         popupCancel: "取消",
@@ -78,7 +78,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
         signIn: "使用 Google 登录",
         popupScopeToSync: "连接我的 Google 账户",
         popupScopeToSyncExplainText:
-            "我们需要连接到您的 Google 账户以同步您的日历和/或任务。这将允许您在 WorkAdventure 中查看您的会议和任务，并直接从地图加入它们。",
+            "我们需要连接到您的 Google 账户以同步您的日历和/或任务。这将允许您在 Atlas Call 中查看您的会议和任务，并直接从地图加入它们。",
         popupScopeToSyncCalendar: "同步我的日历",
         popupScopeToSyncTask: "同步我的任务",
         popupCancel: "取消",
@@ -104,7 +104,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "您今天的会议",
         joinMeeting: "点击此处加入会议",
-        joinMeetingInWorkAdventure: "点击此处在 WorkAdventure 中加入会议",
+        joinMeetingInAtlas Call: "点击此处在 Atlas Call 中加入会议",
         allDay: "全天",
         nextMeeting: "下一个会议",
         inProgress: "进行中",

@@ -1,6 +1,6 @@
 {
-    "short_name": "WA",
-    "name": "WorkAdventure",
+    "short_name": "Atlas",
+    "name": "Atlas Call",
     "icons": [
         {
             "src": "/static/images/favicons/apple-icon-57x57.png",
@@ -126,14 +126,14 @@
     "theme_color": "#000000",
     "shortcuts": [
       {
-        "name": "WorkAdventures",
-        "short_name": "WA",
-        "description": "WorkAdventure application, your virtual office",
+        "name": "Atlas Call",
+        "short_name": "Atlas",
+        "description": "Atlas Call application, your virtual office",
         "url": "/",
         "icons": [{ "src": "/static/images/favicons/android-icon-192x192.png", "sizes": "192x192", "type": "image/png" }]
       }
     ],
-    "description": "WorkAdventure application, your virtual office",
+    "description": "Atlas Call application, your virtual office",
     "screenshots": [],
     "related_applications": [{
         "platform": "web",

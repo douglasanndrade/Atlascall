@@ -74,7 +74,7 @@ const report: DeepPartial<Translation["report"]> = {
     },
     banned: {
         title: "追放されました",
-        subtitle: "WorkAdventure から追放されました",
+        subtitle: "Atlas Call から追放されました",
         details: "詳細については、hello@workadventu.re までお問い合わせください。",
     },
     reasonGiven: "理由：{reason}",
