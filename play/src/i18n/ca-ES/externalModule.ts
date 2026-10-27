@@ -111,7 +111,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "Les vostres reunions avui",
         joinMeeting: "Feu clic aquí per unir-vos a la reunió",
-        joinMeetingInAtlas Call: "Fes clic aquí per unir-te a la reunió a Atlas Call",
+        joinMeetingInWorkAdventure: "Fes clic aquí per unir-te a la reunió a Atlas Call",
         allDay: "Tot el dia",
         nextMeeting: "Propera reunió",
         inProgress: "En curs",

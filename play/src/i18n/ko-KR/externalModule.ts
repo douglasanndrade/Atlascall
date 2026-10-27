@@ -107,7 +107,7 @@ const externalModule: DeepPartial<Translation["externalModule"]> = {
     calendar: {
         title: "오늘 회의",
         joinMeeting: "여기를 클릭하여 회의에 참가하세요",
-        joinMeetingInAtlas Call: "여기를 클릭하여 Atlas Call에서 회의에 참여하세요",
+        joinMeetingInWorkAdventure: "여기를 클릭하여 Atlas Call에서 회의에 참여하세요",
         allDay: "하루 종일",
         nextMeeting: "다음 회의",
         inProgress: "진행 중",

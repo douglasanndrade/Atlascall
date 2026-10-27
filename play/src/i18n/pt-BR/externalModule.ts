@@ -108,7 +108,7 @@ const externalModule: BaseTranslation = {
     calendar: {
         title: "Suas reuniões hoje",
         joinMeeting: "Clique aqui para participar da reunião",
-        joinMeetingInAtlas Call: "Clique aqui para participar da reunião no Atlas Call",
+        joinMeetingInWorkAdventure: "Clique aqui para participar da reunião no Atlas Call",
         allDay: "Dia inteiro",
         nextMeeting: "Próxima reunião",
         inProgress: "Em andamento",
