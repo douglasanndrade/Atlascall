@@ -10,6 +10,8 @@
 #       MAP_STORAGE_AUTHENTICATION_USER=admin
 #       MAP_STORAGE_AUTHENTICATION_PASSWORD=<uma senha forte>
 #       TURN_SECRET=<uma string aleatoria longa> (senha do servidor TURN)
+#       LIVEKIT_API_SECRET=<uma string aleatoria longa> (chave do LiveKit)
+#       LIVEKIT_HOST=wss://<dominio-do-livekit-no-easypanel>  (criar 2o dominio -> servico livekit, porta 7880)
 #
 # Observacoes:
 #   - "play" e BUILDADO do codigo (inclui o rebrand Atlas Call). O resto usa imagens oficiais :master.
@@ -86,6 +88,9 @@ services:
       STUN_SERVER: "stun:stun.l.google.com:19302"
       TURN_SERVER: "turn:157.230.52.86:3478"
       TURN_STATIC_AUTH_SECRET: "${TURN_SECRET}"
+      LIVEKIT_HOST: "${LIVEKIT_HOST}"
+      LIVEKIT_API_KEY: "atlascallkey"
+      LIVEKIT_API_SECRET: "${LIVEKIT_API_SECRET}"
       ENABLE_CHAT: "true"
 
   map-storage:
@@ -118,6 +123,24 @@ services:
   icon:
     image: matthiasluedtke/iconserver:v3.21.0
     restart: unless-stopped
+
+  # Servidor LiveKit (SFU) na propria VPS: salas isoladas (livekitRoom) e grupos
+  # maiores com qualidade. Sinalizacao WS na 7880 (exposta via dominio do EasyPanel);
+  # midia em 7881/tcp + 7882/udp (liberar no firewall da VPS, DO ja deixa aberto).
+  # A chave (LIVEKIT_API_SECRET) fica no .env do EasyPanel, nao no repo.
+  livekit:
+    image: livekit/livekit-server:v1.7.2
+    restart: unless-stopped
+    command: ["--config", "/etc/livekit/livekit.yaml", "--node-ip", "157.230.52.86"]
+    environment:
+      LIVEKIT_KEYS: "atlascallkey: ${LIVEKIT_API_SECRET}"
+    expose:
+      - "7880"
+    ports:
+      - "7881:7881/tcp"
+      - "7882:7882/udp"
+    volumes:
+      - ./deploy/livekit/livekit.yaml:/etc/livekit/livekit.yaml
 
   # Servidor TURN: faz a "ponte" do video/audio entre pessoas em redes diferentes.
   # Sem isso, a chamada fica "carregando pra sempre". Usa a rede do host (VPS)

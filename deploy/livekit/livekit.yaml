@@ -1,0 +1,12 @@
+# Atlas Call - servidor LiveKit (SFU) rodando na propria VPS.
+# Usado pelas salas (livekitRoom) para isolar o audio/video por sala e
+# aguentar grupos maiores com qualidade. As chaves entram por env (LIVEKIT_KEYS)
+# para nao ficarem no repositorio publico.
+port: 7880            # sinalizacao WS/HTTP (exposto via dominio do EasyPanel)
+log_level: info
+rtc:
+  tcp_port: 7881       # fallback TCP
+  udp_port: 7882       # UDP mux (uma porta so para a midia)
+  use_external_ip: false   # usamos --node-ip com o IP publico
+room:
+  auto_create: true
