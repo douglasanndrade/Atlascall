@@ -408,6 +408,7 @@
                 >
                     <CenteredVideo
                         media={streamableEntry.streamable.media}
+                        isScreenSharing={streamableEntry.streamable.videoType === "screenSharing"}
                         videoEnabled={streamableEntry.isPending ? true : (videoEnabled ?? false)}
                         status={streamableEntry.isPending ? "connected" : effectiveStatus}
                         verticalAlign={!inCameraContainer && !inHighlightFullscreenParticipantList && !fullScreen

@@ -225,6 +225,7 @@ import { gameManager } from "./GameManager";
 import { EmoteManager } from "./EmoteManager";
 import { EntityAudioManager } from "./EntityAudioManager";
 import { OutlineManager } from "./UI/OutlineManager";
+import { pushLaser, pushStroke, pushClear } from "../../Stores/ScreenDrawStore";
 import { soundManager } from "./SoundManager";
 import { SharedVariablesManager } from "./SharedVariablesManager";
 import { AreaPropertyVariablesManager } from "./AreaPropertyVariablesManager";
@@ -2306,6 +2307,12 @@ export class GameScene extends DirtyScene {
                     } else if (event.name === "atlas-forcemute") {
                         // Atlas Call - um admin forcou o mute: desliga o microfone local.
                         requestedMicrophoneState.disableMicrophone();
+                    } else if (event.name === "atlas-laser") {
+                        pushLaser(event.data);
+                    } else if (event.name === "atlas-draw") {
+                        pushStroke(event.data);
+                    } else if (event.name === "atlas-draw-clear") {
+                        pushClear();
                     }
                 });
 

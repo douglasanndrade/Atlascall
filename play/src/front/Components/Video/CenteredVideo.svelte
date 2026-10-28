@@ -9,6 +9,7 @@
     import WebRtcVideo from "./VideoTags/WebRtcVideo.svelte";
     import LivekitVideo from "./VideoTags/LivekitVideo.svelte";
     import ScriptingVideo from "./VideoTags/ScriptingVideo.svelte";
+    import ScreenDrawOverlay from "./ScreenDrawOverlay.svelte";
     import { IconCameraExclamation } from "@wa-icons";
 
     /**
@@ -37,6 +38,8 @@
         status: VideoBoxStatus;
         // If true, the video box is a megaphone space
         isMegaphoneSpace: boolean;
+        // Atlas Call - se true, habilita o overlay de desenho/laser (tela compartilhada)
+        isScreenSharing?: boolean;
         children?: Snippet;
     }
 
@@ -53,6 +56,7 @@
         isBlocked = false,
         status = "connecting",
         isMegaphoneSpace = false,
+        isScreenSharing = false,
         children,
     }: Props = $props();
 
@@ -289,6 +293,9 @@
                 : ""}
         >
             {@render children?.()}
+            {#if isScreenSharing && videoEnabled && !isBlocked}
+                <ScreenDrawOverlay />
+            {/if}
         </div>
     {/if}
 </div>
