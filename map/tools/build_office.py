@@ -145,17 +145,36 @@ place(98, 14, 20); place(100, 30, 20); place(99, 30, 9)
 
 os.makedirs(os.path.join(os.path.dirname(__file__), "dist"), exist_ok=True)
 DIST = os.path.join(os.path.dirname(__file__), "dist")
-canvas.convert("RGB").save(os.path.join(DIST, "office2.png"))
+canvas.convert("RGB").save(os.path.join(DIST, "office_render.png"))  # so pra humano ver
 
-# ---------- .tmj (fatiar 1:1) ----------
-floor_data = [0] * (W * H)
-collide_ids = []
+# ---------- tileset compacto com dedup (WA/Phaser renderiza certo assim) ----------
+# Cada celula vira um tile; tiles identicos (mesmos pixels + mesma colisao) sao
+# reaproveitados -> tileset pequeno e PADRAO (16 colunas, 512px de largura, POT),
+# no lugar de uma imagem gigante 1:1 de 46 colunas (que o WA desenhava torto).
+TS_COLS = 16
+tiles = {}            # (blocked, bytes) -> tileid 0-based
+order = []            # tileid -> PIL tile
+cell_tile = [0] * (W * H)
+collide_ids = set()
 for ty in range(H):
     for tx in range(W):
-        idx = ty * W + tx
-        floor_data[idx] = idx + 1  # firstgid 1, tudo desenhado
-        if block[ty][tx]:
-            collide_ids.append(idx)
+        cell = canvas.crop((tx * TILE, ty * TILE, tx * TILE + TILE, ty * TILE + TILE))
+        b = bool(block[ty][tx])
+        key = (b, cell.tobytes())
+        tid = tiles.get(key)
+        if tid is None:
+            tid = len(order); tiles[key] = tid; order.append(cell)
+            if b: collide_ids.add(tid)
+        cell_tile[ty * W + tx] = tid
+
+NT = len(order)
+TS_ROWS = (NT + TS_COLS - 1) // TS_COLS
+ts_img = Image.new("RGBA", (TS_COLS * TILE, TS_ROWS * TILE), (0, 0, 0, 0))
+for i, t in enumerate(order):
+    ts_img.alpha_composite(t, ((i % TS_COLS) * TILE, (i // TS_COLS) * TILE))
+ts_img.convert("RGB").save(os.path.join(DIST, "office2.png"))
+
+floor_data = [cell_tile[i] + 1 for i in range(W * H)]  # firstgid 1
 
 # start no saguao
 sx, sy = 22, 15
@@ -184,8 +203,8 @@ tmj = {
     ],
     "tilesets": [{
         "firstgid": 1, "name": "office", "image": "office2.png",
-        "imagewidth": W * TILE, "imageheight": H * TILE, "tilewidth": TILE, "tileheight": TILE,
-        "tilecount": W * H, "columns": W, "margin": 0, "spacing": 0,
+        "imagewidth": TS_COLS * TILE, "imageheight": TS_ROWS * TILE, "tilewidth": TILE, "tileheight": TILE,
+        "tilecount": NT, "columns": TS_COLS, "margin": 0, "spacing": 0,
         "tiles": [{"id": i, "properties": [{"name": "collides", "type": "bool", "value": True}]}
                   for i in sorted(collide_ids)],
     }],
