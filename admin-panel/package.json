@@ -1,0 +1,13 @@
+{
+  "name": "atlas-call-admin-panel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Painel de admin do Atlas Call: presenca, tempo online/offline, logs e ban",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

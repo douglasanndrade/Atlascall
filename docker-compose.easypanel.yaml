@@ -12,6 +12,8 @@
 #       TURN_SECRET=<uma string aleatoria longa> (senha do servidor TURN)
 #       LIVEKIT_API_SECRET=<uma string aleatoria longa> (chave do LiveKit)
 #       LIVEKIT_HOST=wss://<dominio-do-livekit-no-easypanel>  (criar 2o dominio -> servico livekit, porta 7880)
+#       ADMIN_TOKEN=<uma string aleatoria longa> (token do painel de admin / socket)
+#       ADMIN_PANEL_PASSWORD=<senha para entrar no painel de admin>
 #
 # Observacoes:
 #   - "play" e BUILDADO do codigo (inclui o rebrand Atlas Call). O resto usa imagens oficiais :master.
@@ -52,6 +54,9 @@ services:
       REDIS_HOST: "redis"
       SECRET_KEY: "${SECRET_KEY}"
       MAP_STORAGE_API_TOKEN: "${SECRET_KEY}"
+      # Admin: habilita o socket de admin (/ws/admin/rooms) e a API HTTP de admin
+      ADMIN_SOCKETS_TOKEN: "${ADMIN_TOKEN}"
+      ADMIN_API_TOKEN: "${ADMIN_TOKEN}"
       ENABLE_OPENAPI_ENDPOINT: "true"
       DISABLE_ANONYMOUS: "false"
       START_ROOM_URL: "/_/global/atlascall-atlascall.68tvlf.easypanel.host/maps/office.tmj"
@@ -164,6 +169,26 @@ services:
       - --no-dtls
       - --no-cli
 
+  # Painel de admin do Atlas Call: presenca (online/offline), tempo, logs e ban.
+  # Conecta no socket de admin do pusher. Acesse criando um 3o dominio no EasyPanel
+  # apontando para o servico "admin-panel", porta 3000.
+  admin-panel:
+    build:
+      context: ./admin-panel
+    restart: unless-stopped
+    environment:
+      DOMAIN: "atlascall-atlascall.68tvlf.easypanel.host"
+      ADMIN_SOCKETS_TOKEN: "${ADMIN_TOKEN}"
+      ADMIN_API_TOKEN: "${ADMIN_TOKEN}"
+      ROOM_IDS: "https://atlascall-atlascall.68tvlf.easypanel.host/_/global/atlascall-atlascall.68tvlf.easypanel.host/maps/office.tmj"
+      ADMIN_PANEL_PASSWORD: "${ADMIN_PANEL_PASSWORD}"
+    expose:
+      - "3000"
+    volumes:
+      - admin-panel-data:/data
+    depends_on:
+      - play
+
   redis:
     image: redis:6
     restart: unless-stopped
@@ -173,3 +198,4 @@ services:
 volumes:
   redisdata:
   map-storage-data:
+  admin-panel-data:
