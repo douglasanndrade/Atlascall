@@ -79,6 +79,16 @@ def tilelayer(name, data, visible=True):
     return {"type": "tilelayer", "name": name, "x": 0, "y": 0, "width": W, "height": H,
             "opacity": 1, "visible": visible, "data": data}
 
+# IMPORTANTE: o WA usa um render "GPU" (shader) quando a camada esta densa
+# (>=256 celulas E >=35% preenchida) e esse caminho desenha o tileset torto
+# (escada). Dividindo o chao em K camadas esparsas (25% cada < 35%) forcamos
+# o render CLASSICO do WA, que desenha certo (igual o mapa de fabrica).
+GPU_SPLIT = 4
+floor_layers = []
+for k in range(GPU_SPLIT):
+    dk = [floor_data[i] if (i % GPU_SPLIT) == k else 0 for i in range(W * H)]
+    floor_layers.append(tilelayer(f"floor{k}", dk))
+
 tmj = {
     "compressionlevel": -1, "infinite": False, "orientation": "orthogonal",
     "renderorder": "right-down", "tiledversion": "1.10.2", "type": "map", "version": "1.10",
@@ -98,7 +108,7 @@ tmj = {
     }],
     "layers": [
         tilelayer("start", start, visible=False),
-        tilelayer("floor", floor_data),
+        *floor_layers,
         {"type": "objectgroup", "name": "floorLayer", "x": 0, "y": 0, "opacity": 1,
          "visible": True, "draworder": "topdown", "objects": [
             {"id": 1, "name": "Escritorio", "type": "area", "x": 0, "y": 0,
