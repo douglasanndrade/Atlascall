@@ -15,6 +15,23 @@ im = im.convert("RGBA")
 W, H = im.width // TILE, im.height // TILE
 print(f"design {im.width}x{im.height} = {W}x{H} tiles")
 
+# --- logo "A" da Atlas na TV de parede (topo, cols 3-4) ---
+try:
+    lg = Image.open(r"E:\Downloads\WhatsApp Image 2026-10-27 at 21.55.28.jpeg").convert("RGBA")
+    lw, lh = lg.size
+    a = lg.crop((int(lw * 0.24), int(lh * 0.15), int(lw * 0.76), int(lh * 0.66)))
+    a = a.resize((46, 46), Image.LANCZOS)
+    ap = a.load()
+    for yy in range(46):
+        for xx in range(46):
+            r, g, b, al = ap[xx, yy]
+            if max(r, g, b) < 60:
+                ap[xx, yy] = (r, g, b, 0)
+    im.alpha_composite(a, (170, 10))   # centraliza na TV em branco da parede
+    print("logo colada na TV de parede")
+except Exception as e:
+    print("logo skip:", e)
+
 # classify each cell
 FLOOR, FURN, VOID = 0, 1, 2
 cls = [[FLOOR] * W for _ in range(H)]
