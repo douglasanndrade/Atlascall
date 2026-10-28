@@ -2303,6 +2303,9 @@ export class GameScene extends DirtyScene {
                     if (event.name === "atlas-nudge") {
                         this.cameras.main.shake(600, 0.012);
                         void soundManager.playSound(this.load, this.sound, "/maps/nudge.wav", { volume: 0.6 });
+                    } else if (event.name === "atlas-forcemute") {
+                        // Atlas Call - um admin forcou o mute: desliga o microfone local.
+                        requestedMicrophoneState.disableMicrophone();
                     }
                 });
 

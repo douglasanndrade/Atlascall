@@ -287,6 +287,22 @@ export class RemotePlayer extends Character implements ActivatableInterface {
             actionIcon: IconUserPlus,
         });
 
+        // Atlas Call - Mutar microfone: forca o microfone do jogador clicado a desligar
+        // (o cliente dele recebe "atlas-forcemute" e chama disableMicrophone no GameScene).
+        actions.push({
+            actionName: "🔇 Mutar microfone",
+            protected: false,
+            priority: -2,
+            style: "bg-white/10 hover:bg-white/30 text-orange-400",
+            testId: "wokamenu-force-mute",
+            callback: () => {
+                this.scene.connection
+                    ?.emitScriptableEvent("atlas-forcemute", {}, [this.userId])
+                    .catch((e) => console.error("[atlas-forcemute]", e));
+            },
+            actionIcon: banIcon,
+        });
+
         return actions;
     }
 }
