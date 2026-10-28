@@ -94,7 +94,7 @@ services:
       TURN_SERVER: "turn:157.230.52.86:3478"
       TURN_STATIC_AUTH_SECRET: "${TURN_SECRET}"
       LIVEKIT_HOST: "${LIVEKIT_HOST}"
-      LIVEKIT_API_KEY: "atlascallkey"
+      LIVEKIT_API_KEY: "${LIVEKIT_API_KEY}"
       LIVEKIT_API_SECRET: "${LIVEKIT_API_SECRET}"
       ENABLE_CHAT: "true"
 
@@ -129,23 +129,9 @@ services:
     image: matthiasluedtke/iconserver:v3.21.0
     restart: unless-stopped
 
-  # Servidor LiveKit (SFU) na propria VPS: salas isoladas (livekitRoom) e grupos
-  # maiores com qualidade. Sinalizacao WS na 7880 (exposta via dominio do EasyPanel);
-  # midia em 7881/tcp + 7882/udp (liberar no firewall da VPS, DO ja deixa aberto).
-  # A chave (LIVEKIT_API_SECRET) fica no .env do EasyPanel, nao no repo.
-  livekit:
-    image: livekit/livekit-server:v1.7.2
-    restart: unless-stopped
-    command: ["--config", "/etc/livekit/livekit.yaml", "--node-ip", "157.230.52.86"]
-    environment:
-      LIVEKIT_KEYS: "atlascallkey: ${LIVEKIT_API_SECRET}"
-    expose:
-      - "7880"
-    ports:
-      - "7881:7881/tcp"
-      - "7882:7882/udp"
-    volumes:
-      - ./deploy/livekit/livekit.yaml:/etc/livekit/livekit.yaml
+  # LiveKit: usamos o LiveKit CLOUD (cloud.livekit.io) em vez de hospedar na VPS.
+  # As 3 variaveis (LIVEKIT_HOST/API_KEY/API_SECRET) vem do painel do LiveKit Cloud
+  # e ficam no .env do EasyPanel. Nao ha servico livekit aqui.
 
   # Servidor TURN: faz a "ponte" do video/audio entre pessoas em redes diferentes.
   # Sem isso, a chamada fica "carregando pra sempre". Usa a rede do host (VPS)
