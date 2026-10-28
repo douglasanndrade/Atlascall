@@ -45,8 +45,10 @@ if block[sy][sx]:
             if done: break
         if done: break
 
-# ---------- tileset compacto com dedup ----------
-TS_COLS = 16
+# ---------- tileset ----------
+# 48 colunas -> imagem 1536x1024 (igual a arte, textura quadrada e dentro do
+# limite). Evita o tileset alto demais (512x3072) que fatiava fragmentado.
+TS_COLS = 48
 tiles = {}
 order = []
 cell_tile = [0] * (W * H)

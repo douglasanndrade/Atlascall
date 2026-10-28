@@ -2298,6 +2298,12 @@ export class GameScene extends DirtyScene {
                 // Set up events manager
                 this.scriptingEventsManager = new ScriptingEventsManager(this.connection);
 
+                // Atlas Call - PRIVACIDADE: entra sempre com microfone e camera DESLIGADOS.
+                // A pessoa ativa manualmente (evita vazar audio/video ao chegar, tipo
+                // quando esta falando com alguem antes de ligar).
+                requestedMicrophoneState.disableMicrophone();
+                requestedCameraState.disableWebcam();
+
                 // Atlas Call - "zumbido" (chamar atencao estilo MSN): quando outro jogador
                 // dispara o evento "atlas-nudge", treme a tela e toca um som de alerta.
                 this.connection.receivedEventMessageStream.subscribe((event) => {
