@@ -9,6 +9,7 @@
 #       SECRET_KEY=<uma string aleatoria longa>
 #       MAP_STORAGE_AUTHENTICATION_USER=admin
 #       MAP_STORAGE_AUTHENTICATION_PASSWORD=<uma senha forte>
+#       TURN_SECRET=<uma string aleatoria longa> (senha do servidor TURN)
 #
 # Observacoes:
 #   - "play" e BUILDADO do codigo (inclui o rebrand Atlas Call). O resto usa imagens oficiais :master.
@@ -55,6 +56,9 @@ services:
       MAX_PER_GROUP: "4"
       MAX_USERNAME_LENGTH: "10"
       STUN_SERVER: "stun:stun.l.google.com:19302"
+      # TURN: ponte de video/audio para quem esta em redes diferentes (resolve o "carregando")
+      TURN_SERVER: "turn:157.230.52.86:3478"
+      TURN_STATIC_AUTH_SECRET: "${TURN_SECRET}"
       JITSI_URL: "meet.jit.si"
       JITSI_PRIVATE_MODE: "false"
       ENABLE_MAP_EDITOR: "true"
@@ -82,6 +86,8 @@ services:
       MINIMUM_DISTANCE: "64"
       GROUP_RADIUS: "48"
       STUN_SERVER: "stun:stun.l.google.com:19302"
+      TURN_SERVER: "turn:157.230.52.86:3478"
+      TURN_STATIC_AUTH_SECRET: "${TURN_SECRET}"
       JITSI_URL: "meet.jit.si"
       ENABLE_CHAT: "false"
 
@@ -115,6 +121,28 @@ services:
   icon:
     image: matthiasluedtke/iconserver:v3.21.0
     restart: unless-stopped
+
+  # Servidor TURN: faz a "ponte" do video/audio entre pessoas em redes diferentes.
+  # Sem isso, a chamada fica "carregando pra sempre". Usa a rede do host (VPS)
+  # para abrir as portas UDP direto. Precisa das portas 3478 e 49160-49200/udp
+  # liberadas no firewall da VPS (DigitalOcean: por padrao ja ficam abertas).
+  coturn:
+    image: coturn/coturn:4.8.0
+    restart: unless-stopped
+    network_mode: host
+    command:
+      - -n
+      - --log-file=stdout
+      - --realm=atlascall
+      - --use-auth-secret
+      - --static-auth-secret=${TURN_SECRET}
+      - --external-ip=157.230.52.86
+      - --listening-port=3478
+      - --min-port=49160
+      - --max-port=49200
+      - --no-tls
+      - --no-dtls
+      - --no-cli
 
   redis:
     image: redis:6
