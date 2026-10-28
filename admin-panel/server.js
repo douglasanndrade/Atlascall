@@ -249,10 +249,10 @@ const server = http.createServer((req, res) => {
         req.on("end", () => {
             const params = new URLSearchParams(body);
             if (params.get("password") === ADMIN_PANEL_PASSWORD) {
-                res.writeHead(302, { "Set-Cookie": `atlas_admin=${AUTH_COOKIE}; HttpOnly; Path=/; Max-Age=86400`, Location: "/" });
+                res.writeHead(302, { "Set-Cookie": `atlas_admin=${AUTH_COOKIE}; HttpOnly; Path=/; Max-Age=86400`, Location: "./" });
                 res.end();
             } else {
-                res.writeHead(302, { Location: "/?e=1" });
+                res.writeHead(302, { Location: "./?e=1" });
                 res.end();
             }
         });
@@ -292,7 +292,7 @@ form{background:#1a2234;padding:32px;border-radius:12px;width:280px}h1{font-size
 input{width:100%;padding:10px;border-radius:8px;border:1px solid #2c3850;background:#0f1420;color:#fff;box-sizing:border-box}
 button{width:100%;margin-top:12px;padding:10px;border:0;border-radius:8px;background:#19c37d;color:#042;font-weight:700;cursor:pointer}
 .e{color:#ff7a7a;font-size:13px;margin-top:8px}</style>
-<form method=post action=/login><h1>🛡️ Atlas Call — Admin</h1>
+<form method=post action="login"><h1>🛡️ Atlas Call — Admin</h1>
 <input type=password name=password placeholder=Senha autofocus>
 <button>Entrar</button>${err ? '<div class=e>Senha incorreta</div>' : ''}</form>`;
 }
@@ -328,9 +328,9 @@ function dur(ms){ms=Math.max(0,ms|0);var s=(ms/1000)|0,d=(s/86400)|0,h=((s%86400
  return d?d+'d '+h+'h':h?h+'h '+m+'m':m?m+'m '+x+'s':x+'s';}
 function esc(t){return (t||'').replace(/[<>&]/g,function(c){return{'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
 async function ban(uuid,name){ if(!confirm('Banir '+name+'?'))return;
- await fetch('/api/ban',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({uuid:uuid})}); load();}
+ await fetch('api/ban',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({uuid:uuid})}); load();}
 async function load(){
- var s=await (await fetch('/api/state')).json();
+ var s=await (await fetch('api/state')).json();
  cOn.textContent=s.online; cTot.textContent=s.total;
  rows.innerHTML=s.users.map(function(u){return '<tr><td><span class="dot '+(u.online?'on':'off')+'"></span>'+(u.online?'Online':'Offline')+
   '</td><td>'+esc(u.name)+'</td><td>'+(u.online?dur(u.onlineFor):'–')+'</td><td>'+(u.online?'–':dur(u.offlineFor))+
