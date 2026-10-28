@@ -343,12 +343,17 @@ load();setInterval(load,3000);
 </script>`;
 }
 
+// ---------------- exports (para testes) ----------------
+module.exports = { onJoin, onLeave, snapshot, banUser, fmtDur, _state: () => ({ users, logs }) };
+
 // ---------------- boot ----------------
-loadState();
-if (!DOMAIN || !ADMIN_SOCKETS_TOKEN) {
-    console.error("[boot] FALTA env DOMAIN e/ou ADMIN_SOCKETS_TOKEN");
+if (require.main === module) {
+    loadState();
+    if (!DOMAIN || !ADMIN_SOCKETS_TOKEN) {
+        console.error("[boot] FALTA env DOMAIN e/ou ADMIN_SOCKETS_TOKEN");
+    }
+    server.listen(PORT, () => console.log(`[http] painel em :${PORT}`));
+    connectAdminSocket();
+    if (ADMIN_API_TOKEN) { discoverRooms(); setInterval(discoverRooms, 20000); }
+    setInterval(saveState, 30000);
 }
-server.listen(PORT, () => console.log(`[http] painel em :${PORT}`));
-connectAdminSocket();
-if (ADMIN_API_TOKEN) { discoverRooms(); setInterval(discoverRooms, 20000); }
-setInterval(saveState, 30000);
