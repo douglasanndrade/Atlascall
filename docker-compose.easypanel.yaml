@@ -52,7 +52,7 @@ services:
       MAP_STORAGE_API_TOKEN: "${SECRET_KEY}"
       ENABLE_OPENAPI_ENDPOINT: "true"
       DISABLE_ANONYMOUS: "false"
-      START_ROOM_URL: "/_/global/workadventure.github.io/map-starter-kit/office.tmj"
+      START_ROOM_URL: "/_/global/atlascall-atlascall.68tvlf.easypanel.host/maps/office.tmj"
       MAX_PER_GROUP: "6"
       MAX_USERNAME_LENGTH: "10"
       STUN_SERVER: "stun:stun.l.google.com:19302"
