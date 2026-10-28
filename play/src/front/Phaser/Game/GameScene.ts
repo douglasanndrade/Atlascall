@@ -2297,6 +2297,15 @@ export class GameScene extends DirtyScene {
                 // Set up events manager
                 this.scriptingEventsManager = new ScriptingEventsManager(this.connection);
 
+                // Atlas Call - "zumbido" (chamar atencao estilo MSN): quando outro jogador
+                // dispara o evento "atlas-nudge", treme a tela e toca um som de alerta.
+                this.connection.receivedEventMessageStream.subscribe((event) => {
+                    if (event.name === "atlas-nudge") {
+                        this.cameras.main.shake(600, 0.012);
+                        void soundManager.playSound(this.load, this.sound, "/maps/nudge.wav", { volume: 0.6 });
+                    }
+                });
+
                 // Set up follow manager
                 this.followManager = new FollowManager(this.connection, this.remotePlayersRepository);
 

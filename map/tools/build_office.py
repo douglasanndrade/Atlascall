@@ -200,6 +200,9 @@ tmj = {
     "properties": [
         {"name": "mapName", "type": "string", "value": "Atlas Call - Escritorio"},
         {"name": "mapDescription", "type": "string", "value": "Escritorio Atlas Scale"},
+        # script do "zumbido" (chamar atencao estilo MSN) - carregado relativo ao mapa
+        {"name": "script", "type": "string", "value": "nudge.js"},
+        {"name": "scriptDisableModuleSupport", "type": "bool", "value": True},
     ],
     "tilesets": [{
         "firstgid": 1, "name": "office", "image": "office2.png",
